@@ -5,6 +5,8 @@ Microsoft.Maui.Controls.Xaml.dll
 Microsoft.Maui.dll
 Microsoft.Maui.Essentials.dll
 Microsoft.Maui.Graphics.dll
+Syncfusion.Maui.Charts.dll
+Syncfusion.Maui.Core.dll
 Xamarin.Android.Glide.Annotations.dll
 Xamarin.Android.Glide.DiskLruCache.dll
 Xamarin.Android.Glide.dll
@@ -154,8 +156,6 @@ Microsoft.Maui.Controls.Compatibility.aar
 maui.aar
 Microsoft.Maui.aar
 Microsoft.Maui.Essentials.aar
-Xamarin.Google.Crypto.Tink.Android.aar
-Syncfusion.Maui.Charts.dll
-Syncfusion.Maui.Core.dll
 Syncfusion.Maui.Charts.aar
 Syncfusion.Maui.Core.aar
+Xamarin.Google.Crypto.Tink.Android.aar

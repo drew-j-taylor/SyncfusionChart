@@ -6,7 +6,8 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            var viewmodel = new ViewModel();
+            MainPage = new MainPage(viewmodel);
         }
     }
 }

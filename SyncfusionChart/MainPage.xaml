@@ -1,41 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+             xmlns:model="clr-namespace:SyncfusionChart"
              x:Class="SyncfusionChart.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <Grid
+        RowDefinitions="auto,*,*"
+        Padding="10">
+        <Label Text="Chart" FontSize="32" Grid.Row="0"/>
+        <chart:SfCartesianChart 
+            Title="Progress"
+            Grid.Row="1">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <chart:LineSeries ItemsSource="{Binding Data}"
+                            ShowDataLabels="True"
+                            XBindingPath="Name"
+                            YBindingPath="Height"
+                            Label="Height"
+                            EnableTooltip="True"></chart:LineSeries>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+            <chart:SfCartesianChart.Legend>
+                <chart:ChartLegend/>
+            </chart:SfCartesianChart.Legend>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+            <chart:SfCartesianChart.XAxes>
+                <chart:CategoryAxis PlotOffsetStart="5">
+                    <chart:CategoryAxis.Title>
+                        <chart:ChartAxisTitle Text="Name"></chart:ChartAxisTitle>
+                    </chart:CategoryAxis.Title>
+                </chart:CategoryAxis>
+            </chart:SfCartesianChart.XAxes>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
-    </ScrollView>
+            <chart:SfCartesianChart.YAxes>
+                <chart:NumericalAxis Minimum="0">
+                    <chart:NumericalAxis.Title>
+                        <chart:ChartAxisTitle Text="Height(in cm)"></chart:ChartAxisTitle>
+                    </chart:NumericalAxis.Title>
+                </chart:NumericalAxis>
+            </chart:SfCartesianChart.YAxes>
+        </chart:SfCartesianChart>
+        
+        
+    </Grid>
 
 </ContentPage>
