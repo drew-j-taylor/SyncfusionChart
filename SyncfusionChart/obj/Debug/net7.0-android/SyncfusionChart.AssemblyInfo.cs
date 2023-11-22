@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SyncfusionChart")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+fa9e56ddca25c42416f3d05deec0016c2402ff3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2287914b620293dc842de6cde3bcf2ea5d0bf4dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("SyncfusionChart")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SyncfusionChart")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

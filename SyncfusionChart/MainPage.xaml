@@ -8,7 +8,7 @@
     <Grid
         RowDefinitions="auto,*,*"
         Padding="10">
-        <Label Text="Chart" FontSize="32" Grid.Row="0"/>
+        <Label Text="{Binding Average}" FontSize="32" Grid.Row="0"/>
         <chart:SfCartesianChart 
             Title="Progress"
             Grid.Row="1">
